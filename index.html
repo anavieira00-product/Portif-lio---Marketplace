@@ -14,7 +14,7 @@
 </nav></div></header>
 
 <section class="hero"><div class="container hero-grid"><div>
-<div class="badge">PRODUTOS DIGITAOS · LEGAL PRODUCT</div>
+<div class="badge">PRODUTOS DIGITAIS · LEGAL PRODUCT</div>
 <h1>Direito + Produto + <span>Tecnologia.</span></h1>
 <p class="hero-description">Advogada de Direito Bancário em transição para Produtos digitais, atuando em áreas como Product Manager, Product Owner ou Analista de Produtos.</p>
 <div class="buttons"><a href="#case1" class="button primary">Ver Cases</a><a href="https://www.linkedin.com/in/ana-carolina-vieira-2a7933201/" target="_blank" class="button secondary">LinkedIn</a></div>
@@ -38,15 +38,19 @@
 </div></section>
 
 <section><div class="container">
-<div class="section-label">03 — Discovery & Hipóteses</div><h2>Quais as possíveis hipóteses de solução do problema?</h2>
-<div class="pattern-grid">
-<div class="card pattern"><div class="pattern-icon">📦</div><h3>Previsibilidade Proativa</h3><p>Reduzir a ansiedade informando o status antes do cliente precisar perguntar (evita abertura de tickets e reclamações externas).</p></div>
-<div class="card pattern"><div class="pattern-icon">🔄</div><h3>Autonomia de Resolução</h3><p>Oferecer opções claras e self-service (reembolso, novo envio ou voucher) direto no app em poucos cliques.</p></div>
-<div class="card pattern"><div class="pattern-icon">👤</div><h3>Clareza de Ownership</h3><p>Transparência sobre quem está conduzindo o problema, deixando claro o próximo passo e a responsabilidade pela resolução.</p></div>
-</div></div></section>
+<div class="section-label">02 — Perguntas de Discovery</div>
+<h2>O que eu precisava entender antes de pensar na solução?</h2>
+<p class="section-description">Antes de definir funcionalidades, organizei o que já tinha como evidência, o que ainda era suposição e quais dúvidas precisavam ser investigadas. Usei a Matriz CSD como apoio para orientar a pesquisa, sem tratar hipóteses como fatos.</p>
+<div class="discovery-grid">
+<div class="card discovery-card"><span>01</span><h3>Onde está a maior fricção?</h3><p>O atraso em si é o principal problema ou a falta de informação e previsibilidade durante o atraso?</p></div>
+<div class="card discovery-card"><span>02</span><h3>Por que o cliente recontata?</h3><p>Ele não recebeu resposta, não confia no status apresentado ou não encontra uma ação clara para resolver o problema?</p></div>
+<div class="card discovery-card"><span>03</span><h3>O que ajuda a resolver?</h3><p>Mais informação é suficiente ou o cliente precisa de autonomia para escolher um caminho de resolução?</p></div>
+</div>
+<div class="method-note"><strong>CSD como ferramenta de apoio:</strong> certezas, suposições e dúvidas foram usadas para organizar o discovery e definir o que precisava ser investigado nos dados públicos e no cenário simulado.</div>
+</div></section>
 
 <section id="benchmark"><div class="container">
-<div class="section-label">02 — Benchmark público</div><h2>Por que analisar dados públicos do Reclame Aqui?</h2>
+<div class="section-label">03 — Benchmark público</div><h2>Por que analisar dados públicos do Reclame Aqui?</h2>
 <p class="section-description">Os dados públicos do Reclame Aqui ajudam a entender sinais de insatisfação e a relação entre a experiência de resolução e a intenção de recompra. Usamos esses dados como referência para calibrar hipóteses de produto da SuccessTrail.</p>
 <div class="benchmark benchmark-top">
 <div class="card benchmark-card"><div class="company">Setor de marketplace</div><div class="company-note">Referência pública · Reclame Aqui</div><div class="benchmark-number">64,2%</div><div class="benchmark-label">reclamações resolvidas</div><div class="benchmark-number">61,6%</div><div class="benchmark-label">voltariam a fazer negócio</div><div class="benchmark-source">Fonte: Reclame Aqui</div></div>
@@ -60,16 +64,6 @@
 <div class="notice"><strong>Como interpretar os dados de suporte:</strong> A relação entre a taxa de resolução e a intenção de recompra evidencia que o atendimento pós-compra funciona como uma alavanca direta de retenção. Enquanto a solução de problemas chega a preservar até 96% dos clientes impactados, a incapacidade de resolução gera um churn definitivo de até 38,4% da base de reclamantes. Essa leitura deve ser validada com a base interna da SuccessTrail antes de definir metas de produto.</div>
 </div></section>
 
-<section class="board-section"><div class="container">
-<div class="section-label">05 — Análise de reclamações</div><h2>Onde a experiência e a confiança quebram?</h2>
-<p class="section-description">A partir dos dados analisados com LLM, foi possível identificar padrões recorrentes nas reclamações e recontatos e localizar os principais pontos de quebra da experiência.</p>
-<div class="cluster-flow"><div class="flow-step">Texto da reclamação/recontato</div><div class="flow-arrow">→</div><div class="flow-step">Embedding</div><div class="flow-arrow">→</div><div class="flow-step">Clusterização</div><div class="flow-arrow">→</div><div class="flow-step">Tema do cluster</div></div>
-<table class="cluster-table"><thead><tr><th>Cluster</th><th>Possível motivo identificado</th></tr></thead><tbody>
-<tr><td>1</td><td>Pedido atrasado além do prazo</td></tr><tr><td>2</td><td>Pedido parado no centro de distribuição</td></tr><tr><td>3</td><td>Transportadora não atualiza rastreio</td></tr><tr><td>4</td><td>Pedido consta como entregue, mas não foi recebido</td></tr><tr><td>5</td><td>Cliente entrou em contato várias vezes pelo mesmo atraso</td></tr><tr><td>6</td><td>Previsão de entrega alterada</td></tr><tr><td>7</td><td>Pedido cancelado por atraso</td></tr><tr><td>8</td><td>Atraso relacionado à região/CEP</td></tr>
-</tbody></table>
-<div class="notice"><strong>Nota de método:</strong> O LLM é utilizado depois da clusterização para interpretar, nomear e organizar os grupos. Ele apoia o diagnóstico; a priorização ainda depende de impacto, frequência, esforço e validação com dados.</div>
-</div></section>
-
 <section class="simulated"><div class="container">
 <div class="section-label">04 — Dados da SuccessTrail</div><h2>Diagnosticando o problema interno na SuccessTrail.</h2>
 <p class="section-description">O diagnóstico foi construído a partir da análise dos dados simulados e da aplicação de LLM para identificar padrões nas reclamações e recontatos.</p>
@@ -80,6 +74,16 @@
 <div class="sim-card"><span class="sim-badge">SIMULADO</span><div class="number">4,2 dias</div><strong>tempo médio de resolução</strong><small>Prazo alto que estimula reclamações externas</small></div>
 </div></div></section>
 
+<section class="board-section"><div class="container">
+<div class="section-label">05 — Análise de reclamações</div><h2>Onde a experiência e a confiança quebram?</h2>
+<p class="section-description">A partir dos dados analisados com LLM, foi possível identificar padrões recorrentes nas reclamações e recontatos e localizar os principais pontos de quebra da experiência.</p>
+<div class="cluster-flow"><div class="flow-step">Texto da reclamação/recontato</div><div class="flow-arrow">→</div><div class="flow-step">Embedding</div><div class="flow-arrow">→</div><div class="flow-step">Clusterização</div><div class="flow-arrow">→</div><div class="flow-step">Tema do cluster</div></div>
+<table class="cluster-table"><thead><tr><th>Cluster</th><th>Possível motivo identificado</th></tr></thead><tbody>
+<tr><td>1</td><td>Pedido atrasado além do prazo</td></tr><tr><td>2</td><td>Pedido parado no centro de distribuição</td></tr><tr><td>3</td><td>Transportadora não atualiza rastreio</td></tr><tr><td>4</td><td>Pedido consta como entregue, mas não foi recebido</td></tr><tr><td>5</td><td>Cliente entrou em contato várias vezes pelo mesmo atraso</td></tr><tr><td>6</td><td>Previsão de entrega alterada</td></tr><tr><td>7</td><td>Pedido cancelado por atraso</td></tr><tr><td>8</td><td>Atraso relacionado à região/CEP</td></tr>
+</tbody></table>
+<div class="notice"><strong>Nota de método:</strong> O LLM é utilizado depois da clusterização para interpretar, nomear e organizar os grupos. Ele apoia o diagnóstico; a priorização ainda depende de impacto, frequência, esforço e validação com dados.</div>
+</div></section>
+
 <section><div class="container">
 <div class="section-label">06 — Problem Framing</div><h2>A definição dos problemas prioritários.</h2>
 <p class="section-description">Os problemas prioritários foram definidos a partir dos padrões encontrados na análise com LLM, combinando frequência dos temas, impacto na experiência e potencial de resolução por produto.</p>
@@ -89,9 +93,20 @@
 <div class="card problem-card"><div class="number">PROBLEMA 03</div><h3>Falta de opcionalidade</h3><p>O cliente identifica o problema, mas não encontra caminhos claros para aceitar um novo prazo, solicitar reembolso ou receber uma compensação.</p></div>
 </div></div></section>
 
+<section class="hypothesis-section"><div class="container">
+<div class="section-label">07 — Hipótese de Produto</div>
+<h2>Dos achados para uma aposta de Produto.</h2>
+<p class="section-description">Os padrões encontrados apontam para uma combinação de baixa previsibilidade, recontato e pouca autonomia. A partir desse diagnóstico, formulei a hipótese que orienta a solução.</p>
+<div class="hypothesis-box"><span>HIPÓTESE</span><p>Se a SuccessTrail identificar atrasos antes do contato do cliente e oferecer caminhos claros de resolução dentro do próprio produto, poderá reduzir recontatos e aumentar a percepção de controle durante o pós-compra.</p></div>
+<div class="bet-grid">
+<div class="card bet-card"><strong>Previsibilidade</strong><p>Informar o problema e o próximo passo antes que o cliente precise procurar suporte.</p></div>
+<div class="card bet-card"><strong>Autonomia</strong><p>Permitir que o cliente escolha entre opções elegíveis de resolução.</p></div>
+<div class="card bet-card"><strong>Clareza</strong><p>Mostrar status, responsabilidade e acompanhamento da resolução em um único fluxo.</p></div>
+</div></div></section>
+
 <section class="solution"><div class="container">
-<div class="section-label">07 — Solution</div><h2>Central de Resolução Pós-Compra.</h2>
-<p class="section-description">Uma central dentro do produto para transformar um problema de entrega em uma jornada de resolução clara, com opções que variam conforme o estágio do pedido e validações de risco em background.</p>
+<div class="section-label">08 — Solução & MVP</div><h2>Central de Resolução Pós-Compra.</h2>
+<p class="section-description">A Central representa a visão de solução para transformar um problema de entrega em uma jornada clara de resolução. Para validar a hipótese, porém, eu começaria com um MVP menor antes de evoluir para automações mais complexas.</p>
 <div class="solution-grid"><div>
 <div class="product-screen"><div class="screen"><div class="screen-top">← Meus pedidos</div><h3>Pedido #12345</h3>
 <div class="order-status"><strong>⚠ Pedido atrasado</strong>Nova previsão: 18/08</div>
@@ -116,21 +131,32 @@
 <div class="solution-step"><div class="step-number">5</div><div><strong>Medir o impacto</strong><span>Reduzir custo com taxa de recontato e aumentar receita por meio de recompra, especialmente quando a compensação preserva a relação com o cliente.</span></div></div>
 </div></div>
 
+<div class="mvp-block">
+<div class="mvp-heading"><span>MVP PROPOSTO</span><h3>O que eu testaria primeiro?</h3><p>O objetivo inicial é validar se previsibilidade e autonomia reduzem recontato antes de investir em toda a visão da solução.</p></div>
+<div class="mvp-flow">
+<div><strong>1. Detectar atraso</strong><span>Identificar que o prazo original não será cumprido.</span></div><div class="mvp-arrow">→</div>
+<div><strong>2. Avisar proativamente</strong><span>Apresentar nova previsão sem depender de contato do cliente.</span></div><div class="mvp-arrow">→</div>
+<div><strong>3. Oferecer caminhos</strong><span>Permitir aceitar o novo prazo ou solicitar uma resolução elegível.</span></div><div class="mvp-arrow">→</div>
+<div><strong>4. Acompanhar</strong><span>Mostrar o status até a conclusão da resolução.</span></div>
+</div>
+<div class="mvp-evolution"><strong>Evoluções após validação:</strong> chatbot, compensações automáticas, regras avançadas de risco e automações adicionais de reembolso.</div>
+</div>
+
 <div class="chatbot-box"><strong>🤖 Chatbot de resolução</strong><p style="margin-top:6px;font-size:13px">O chatbot funciona como camada de orientação: explica o status, apresenta as opções elegíveis, coleta informações e encaminha exceções para atendimento humano. O objetivo não é substituir o suporte, mas reduzir contatos repetitivos e facilitar a resolução.</p></div>
 
 <div class="notice" style="background:var(--blue-light);border-color:#93c5fd;color:#1e40af;margin-top:25px"><strong style="font-size:15px;display:block;margin-bottom:6px">💡 Diferencial em Relação ao Padrão de Mercado</strong><p style="margin:0;font-size:13px;color:#1e3a8a"><strong>O diferencial:</strong> a Central combina detecção proativa, opcionalidade, chatbot e governança de risco. Em vez de apresentar uma solução única para todos os atrasos, o produto adapta a ação ao estágio do fluxo: pode oferecer novo prazo com benefício, liberar reembolso quando elegível ou direcionar para supervisão humana.</p></div>
 </div></section>
 
 <section><div class="container">
-<div class="section-label">08 — Metrics</div><h2>Métricas de Impacto no Negócio</h2>
-<p class="section-description">A solução é avaliada não apenas pela redução de reclamações, mas pelo impacto financeiro, operacional e de experiência gerado por uma resolução mais rápida e previsível.</p>
+<div class="section-label">09 — Métricas & Cenários</div><h2>Como eu avaliaria se a hipótese funcionou?</h2>
+<p class="section-description">Como o produto é fictício, os números abaixo não representam resultados previstos. São cenários simulados para dimensionar a oportunidade e demonstrar quais métricas eu acompanharia em um experimento real.</p>
 <div class="impact-grid">
 
-<div class="impact-card"><div class="impact-header"><span class="impact-icon">↗</span><span class="proposed">NEGÓCIO</span></div><div class="impact-label">Receita incremental potencial</div><div class="impact-number">R$ 900 mil</div><div class="impact-period">por ciclo mensal simulado</div>
+<div class="impact-card"><div class="impact-header"><span class="impact-icon">↗</span><span class="proposed">NEGÓCIO</span></div><div class="impact-label">Cenário de receita incremental</div><div class="impact-number">R$ 900 mil</div><div class="impact-period">cenário mensal ilustrativo</div>
 <div class="impact-flow"><div><strong>100 mil</strong><span>pedidos/mês</span></div><div class="impact-arrow">→</div><div><strong>+5 p.p.</strong><span>recompra</span></div><div class="impact-arrow">→</div><div><strong>R$ 180</strong><span>ticket médio</span></div></div>
 <p>Hipótese de impacto: aumento de 5 pontos percentuais na recompra, considerando ticket médio de R$ 180.</p></div>
 
-<div class="impact-card"><div class="impact-header"><span class="impact-icon">↓</span><span class="proposed">EFICIÊNCIA</span></div><div class="impact-label">Custo operacional evitado</div><div class="impact-number">R$ 184 mil</div><div class="impact-period">por mês simulado</div>
+<div class="impact-card"><div class="impact-header"><span class="impact-icon">↓</span><span class="proposed">EFICIÊNCIA</span></div><div class="impact-label">Cenário de eficiência operacional</div><div class="impact-number">R$ 184 mil</div><div class="impact-period">cenário mensal ilustrativo</div>
 <div class="before-after"><div class="metric-before"><span>Antes</span><strong>38%</strong><small>recontato</small></div><div class="metric-arrow">→</div><div class="metric-after"><span>Meta</span><strong>15%</strong><small>recontato</small></div></div>
 <p>Redução hipotética de aproximadamente 23 mil contatos mensais, considerando R$ 8 por atendimento.</p></div>
 
@@ -150,14 +176,14 @@
 </div></section>
 
 <section class="takeaway"><div class="container takeaway-grid"><div>
-<div class="section-label">09 — Takeaway Case 01</div><h2>Resumo da Estratégia</h2>
-<p>Partimos de sinais públicos para formular hipóteses, analisamos dados simulados com apoio de LLM para identificar os principais padrões de fricção e desenhamos uma Central de Resolução que combina previsibilidade, opcionalidade, chatbot e governança de risco.</p>
+<div class="section-label">10 — Takeaway Case 01</div><h2>Resumo da Estratégia</h2>
+<p>Parti de sinais públicos e perguntas de discovery, organizei certezas, suposições e dúvidas com apoio da Matriz CSD e analisei dados simulados com LLM para identificar padrões de fricção. A partir dos achados, formulei uma hipótese de Produto e defini um MVP para testar previsibilidade e autonomia antes de evoluir para a visão completa da Central de Resolução.</p>
 </div>
 <ul class="takeaway-list"><li>Benchmark usado para formular hipóteses</li><li>LLM aplicado à identificação e interpretação de padrões</li><li>Problemas priorizados a partir dos dados</li><li>Jornada de resolução com opções conforme o contexto</li><li>Redução de recontato e potencial aumento de recompra</li></ul>
 </div></section>
 
 <section><div class="container">
-<div class="section-label">10 — Competências</div><h2>Habilidades & Ferramentas</h2>
+<div class="section-label">11 — Competências</div><h2>Habilidades & Ferramentas</h2>
 <div class="skills">
 <div class="skill">Product Discovery</div><div class="skill">Problem Framing</div><div class="skill">Mapeamento de Jornada (Service Design)</div><div class="skill">Legal Product Design & Compliance</div><div class="skill">Análise de Riscos & Prevenção à Fraude</div><div class="skill">Análise de Dados & Benchmarking</div><div class="skill">LLM & Análise de Texto</div><div class="skill">SQL (Básico / Intermediário)</div><div class="skill">Figma & Prototipagem</div><div class="skill">Gestão de Stakeholders</div>
 </div></div></section>
